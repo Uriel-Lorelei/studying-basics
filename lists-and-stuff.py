@@ -14,6 +14,8 @@ print(fire)
 
 print(random.choice(supplies))
 
-random.shuffle(supplies)
+# random.shuffle(supplies)
 
-print(supplies[1])
+# print(supplies[1])
+
+print(supplies.index('pens'))
