@@ -13,3 +13,7 @@ write, pins, fire, bind = supplies
 print(fire)
 
 print(random.choice(supplies))
+
+random.shuffle(supplies)
+
+print(supplies[1])
