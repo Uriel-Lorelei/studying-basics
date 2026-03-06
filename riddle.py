@@ -2,7 +2,6 @@ import webbrowser
 import pyautogui
 
 # url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" # rickroll
-# url = "https://www.youtube.com/shorts/01xcAAOQoTI" # aayush guitar
 url = "https://web.archive.org/web/20230717204942/https://pnrtscr.com/fep8be" #jeff the killer
 
 # for jeff the killer
@@ -30,3 +29,4 @@ if game() == "ans":
     while True:
         if accept_cookies() == "success":
             break
+
