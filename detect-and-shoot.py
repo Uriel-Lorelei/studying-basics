@@ -22,8 +22,10 @@ def shoot():
     time.sleep(0.02)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
 
-time.sleep(5)
-print("NOW RUNNING...")
+for i in range(5):
+    print(f"Now Running in {i}...")
+    time.sleep(1)
+
 while True:
     # center = (960, 527) 
     left = 910
@@ -59,4 +61,5 @@ while True:
 #     if check_color(what_color, (255, 0, 0)):
 #         print("RED AAAAHHH")
 #         shoot()
+
 #     time.sleep(0.01)
