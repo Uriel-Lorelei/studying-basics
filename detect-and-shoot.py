@@ -22,7 +22,7 @@ def shoot():
     time.sleep(0.02)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
 
-for i in range(5):
+for i in range(5, 0, -1):
     print(f"Now Running in {i}...")
     time.sleep(1)
 
@@ -63,3 +63,4 @@ while True:
 #         shoot()
 
 #     time.sleep(0.01)
+
