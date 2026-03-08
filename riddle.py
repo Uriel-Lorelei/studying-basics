@@ -10,7 +10,7 @@ def accept_cookies():
     if rgb == (132, 94, 194):
         pyautogui.moveTo(836, 687)
         pyautogui.click()
-        return "success"
+        return True
 
 def game():
     answer = 'paris'
@@ -19,14 +19,15 @@ def game():
     if question == answer:
         print("Correct")
         print("YOUR PRIZE IS HERE!")
-        return "ans"
+        return True
     else:
         print("HOW DO YOU NOT EVEN KNOW THE CAPITAL CITY OF FRANCE.\nTRY AGAIN!!!(hint: starts with 'p')")
         game()
 
-if game() == "ans":
+if game():
     webbrowser.open(url)
     while True:
-        if accept_cookies() == "success":
+        if accept_cookies():
             break
+
 
